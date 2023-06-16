@@ -69,8 +69,8 @@ def predict_image(model, image_path):
     
     return predicted_label
 # Load the model
-model = tf.keras.models.load_model('saved_model.h5')
-image_path = "/home/ba-ajeetkumary/Downloads/Ishan_Pr/data/test/00537.png"
+model = tf.keras.models.load_model(r"C:\Users\Aksha\Desktop\TRS\krisna.h5")
+image_path = r"C:\Users\Aksha\Desktop\FinalYearProject\May_Presentation\test_img5.jpg"
 predicted_label = predict_image(model, image_path)
 print("Predicted Label:", classes[predicted_label])
 

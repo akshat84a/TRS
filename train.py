@@ -14,7 +14,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
 # Load the dataset
-train_data = read_images('/home/ba-ajeetkumary/Downloads/Ishan_Pr/data/Train')
+train_data = read_images(r"C:\Users\Aksha\Desktop\College_Project\archive\Train")
 shuffled_train = train_data.copy()  
 shuffled_train = np.array(shuffled_train)  
 
@@ -68,7 +68,7 @@ aug = ImageDataGenerator(
 
 history = model.fit(aug.flow(x_train, y_train, batch_size=32), epochs=epochs, validation_data=(x_val,y_val))
 
-#model.save("saved_model.h5")
+model.save("krisna.h5")
 
 
 # Plot training and validation loss
